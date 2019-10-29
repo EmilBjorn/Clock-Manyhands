@@ -24,12 +24,7 @@ function draw() {
     pop();
   }
 
-  ang += 1;
+  ang += 0.1;
 }
 
-// function initialize(n) {
-//   for (let index = 0; index < n; index++) {
-//     rotate(-ang);
-//     ellipse(index * scale, 0, scale, scale);
-//   }
-// }
+function particle() {}
