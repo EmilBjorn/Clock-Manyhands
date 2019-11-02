@@ -5,6 +5,7 @@ let scale = 100 / n;
 let ang = 0;
 let mils;
 let particles = [];
+let timeList = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -12,14 +13,15 @@ function setup() {
   for (let index = 0; index < 10; index++) {
     particles[index] = new particle(index, index);
   }
+  noStroke();
 }
 
 function draw() {
   translate(canvas.width / 2, canvas.height / 2);
   background(100);
-  fill(200);
+  // fill(200);
   // initialize(10);
-  ellipse(0, 0, scale);
+  // ellipse(0, 0, scale);
   fill(255);
 
   mils = millis() / 1000;
